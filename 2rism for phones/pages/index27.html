@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel News</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .hero {
+      height: 300px;
+      background: url('https://images.unsplash.com/photo-1502920917128-1aa500764ce7') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .news {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #f4f7fb;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+    }
+
+    .card-content p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #1e90ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .card-content a:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Travel News</h1>
+  </header>
+
+  <div class="hero">
+    Latest Updates
+  </div>
+
+  <div class="content">
+    <h2>Recent Travel News</h2>
+    <p>Stay updated with the latest travel destinations and tips around the world.</p>
+
+    <div class="news">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <div class="card-content">
+          <h3>Mountain Travel</h3>
+          <p>New hiking routes opened in popular mountain regions.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+        <div class="card-content">
+          <h3>Beach Resorts</h3>
+          <p>Top beach destinations for summer 2026 announced.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
+        <div class="card-content">
+          <h3>City Tours</h3>
+          <p>New guided city tours available in Europe and USA.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Travel Website
+  </footer>
+
+</body>
+</html>

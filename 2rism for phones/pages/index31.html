@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+      background: #f4f7fb;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .question:hover {
+      background: #e6f0ff;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>FAQ</h1>
+  </header>
+
+  <div class="container">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggle(this)">What is 2rism?</div>
+      <div class="answer">2rism is a travel platform for discovering destinations and activities.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggle(this)">How do I book a trip?</div>
+      <div class="answer">You can choose a destination and contact our partners to book.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggle(this)">Is it free to use?</div>
+      <div class="answer">Yes, browsing and exploring is completely free.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggle(this)">Can I become a partner?</div>
+      <div class="answer">Yes, go to the Partner With Us page and submit your request.</div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 2rism Travel Website
+  </footer>
+
+  <script>
+    function toggle(el) {
+      const answer = el.nextElementSibling;
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>

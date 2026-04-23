@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Features</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .hero {
+      height: 300px;
+      background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .feature {
+      background: #f4f7fb;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      background: #e6f0ff;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Features</h1>
+  </header>
+
+  <div class="hero">
+    Why Choose Us
+  </div>
+
+  <div class="content">
+    <h2>Our Key Features</h2>
+    <p>
+      We provide everything you need for the best travel experience around the world.
+    </p>
+
+    <div class="features">
+
+      <div class="feature">
+        <h3>🌍 Destinations</h3>
+        <p>Discover top travel places worldwide.</p>
+      </div>
+
+      <div class="feature">
+        <h3>✈️ Easy Booking</h3>
+        <p>Quick and simple travel planning.</p>
+      </div>
+
+      <div class="feature">
+        <h3>🏨 Hotels</h3>
+        <p>Best hotel recommendations for comfort.</p>
+      </div>
+
+      <div class="feature">
+        <h3>🗺 Guides</h3>
+        <p>Helpful travel tips and guides.</p>
+      </div>
+
+      <div class="feature">
+        <h3>💬 Support</h3>
+        <p>24/7 help for all travelers.</p>
+      </div>
+
+      <div class="feature">
+        <h3>⭐ Reviews</h3>
+        <p>Real feedback from travelers.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Travel Website
+  </footer>
+
+</body>
+</html>

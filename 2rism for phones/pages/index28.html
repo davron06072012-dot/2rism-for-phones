@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .menu-container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .item {
+      background: #f4f7fb;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+      background: #e6f0ff;
+    }
+
+    .item a {
+      text-decoration: none;
+      color: #1e90ff;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Menu</h1>
+  </header>
+
+  <div class="menu-container">
+    <h2>Navigate the Website</h2>
+    <p>Choose where you want to go:</p>
+
+    <div class="menu">
+
+      <div class="item">
+        🏠 Home
+        <a href="#">Go</a>
+      </div>
+
+      <div class="item">
+        📍 Locations
+        <a href="#">Go</a>
+      </div>
+
+      <div class="item">
+        🎯 Activities
+        <a href="#">Go</a>
+      </div>
+
+      <div class="item">
+        📰 News
+        <a href="#">Go</a>
+      </div>
+
+      <div class="item">
+        ℹ️ About Us
+        <a href="#">Go</a>
+      </div>
+
+      <div class="item">
+        ✈️ Travel Tips
+        <a href="#">Go</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Travel Website
+  </footer>
+
+</body>
+</html>

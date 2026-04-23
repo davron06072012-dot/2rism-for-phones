@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invite Friends</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .container p {
+      color: #555;
+    }
+
+    input {
+      width: 80%;
+      padding: 12px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0f78d1;
+      transform: scale(1.05);
+    }
+
+    .invite-box {
+      margin-top: 20px;
+      background: #f0f4ff;
+      padding: 15px;
+      border-radius: 10px;
+      word-break: break-all;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Invite Friends</h1>
+  </header>
+
+  <div class="container">
+    <h2>Share your invite link</h2>
+    <p>Invite your friends and travel together ✈️</p>
+
+    <input type="text" value="https://mytravelsite.com/invite?code=ABC123" readonly>
+
+    <br>
+
+    <button onclick="copyLink()">Copy Link</button>
+
+    <div class="invite-box">
+      Your friends will join using your referral code and you can earn rewards 🎁
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Travel Website
+  </footer>
+
+  <script>
+    function copyLink() {
+      const input = document.querySelector("input");
+      input.select();
+      input.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Link copied!");
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>St. Joseph Location</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .hero {
+      height: 320px;
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 42px;
+      font-weight: bold;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #f4f7fb;
+      padding: 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #e6f0ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Location</h1>
+  </header>
+
+  <div class="hero">
+    St. Joseph
+  </div>
+
+  <div class="content">
+    <h2>About St. Joseph</h2>
+    <p>
+      :contentReference[oaicite:0]{index=0} is a historic river city known for its old architecture,
+      museums, and its role in American frontier history.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🏛 History</h3>
+        <p>Important stop on the Pony Express route.</p>
+      </div>
+
+      <div class="card">
+        <h3>🌊 River</h3>
+        <p>Located along the Missouri River.</p>
+      </div>
+
+      <div class="card">
+        <h3>🏙 City Life</h3>
+        <p>Small city with a calm and friendly atmosphere.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Travel Website
+  </footer>
+
+</body>
+</html>

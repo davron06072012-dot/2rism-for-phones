@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+    }
+
+    header {
+      background: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      display: grid;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-family: Arial;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    button {
+      padding: 12px;
+      background: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .review {
+      background: #f4f7fb;
+      padding: 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .review:hover {
+      transform: translateY(-5px);
+    }
+
+    .review h4 {
+      margin: 0 0 10px;
+    }
+
+    .stars {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Feedback</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="intro">
+      <h2>We value your opinion ✨</h2>
+      <p>Share your experience with 2rism travel platform</p>
+    </div>
+
+    <div class="form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Write your feedback..."></textarea>
+      <button>Submit Feedback</button>
+    </div>
+
+    <h3>What people say</h3>
+
+    <div class="reviews">
+
+      <div class="review">
+        <h4>Anna</h4>
+        <div class="stars">★★★★★</div>
+        <p>Amazing travel platform! Very easy to use.</p>
+      </div>
+
+      <div class="review">
+        <h4>John</h4>
+        <div class="stars">★★★★☆</div>
+        <p>Great destinations and helpful guides.</p>
+      </div>
+
+      <div class="review">
+        <h4>David</h4>
+        <div class="stars">★★★★★</div>
+        <p>I loved the experience, highly recommended!</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 2rism Travel Website
+  </footer>
+
+</body>
+</html>
